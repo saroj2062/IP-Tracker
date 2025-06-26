@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+</script>
+</head>
+<body>
+
+<main>
+  <header>
+
+    <h3>IP Address Tracker</h3>
+
+    <div class="search-container">
+        <input type="text" placeholder="Search for any adderess or domain" id="search" value="8.8.8.8" autofocus>
+        <button id="search-submission"><img src="./images/icon-arrow.svg" alt="icon arrow"></button>
+           <span class="error" ></span>
+
+      </div>
+
+</header>
+<section class="result">
+<div class="result-container">
+<div>  <h6>Ip Address</h6>
+  <span class="ip">125.185.1.2</span></div>
+  
+  <div id="line"></div>
+
+</div>
+<div class="result-container">
+  <div>
+  <h6>Location</h6>
+  <span class="location">Nepal,Biratnagar</span>
+  </div>
+  <div id="line"></div>
+
+</div>
+<div class="result-container">
+  <div><h6>TimeZone</h6>
+  <span class="Timezone">UTC-5:00</span></div>
+  
+  <div id="line"></div>
+
+</div>
+<div class="result-container">
+  <div>
+  <h6>ISP</h6>
+  <span class="isp">Web-surfer</span></div>
+</div>
+
+</section>
+
+<section class="map-container">
+  <div id="map"></div>
+  <div class="map-not-found">
+    <p>Location cannot be found ,Ip Tracker has limited access !!</p>
+  </div>
+</section>
+
+
+</main>
+
+    
+ 
+<script src="script.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
